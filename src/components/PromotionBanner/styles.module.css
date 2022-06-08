@@ -1,5 +1,5 @@
 .container {
-  @apply rounded-lg w-full h-fit flex flex-col sm:flex-row sm:items-start;
+  @apply rounded-lg w-full h-fit flex flex-col sm:flex-row sm:items-start px-4 sm:p-0;
 }
 
 .content {

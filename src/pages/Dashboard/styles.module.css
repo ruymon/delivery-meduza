@@ -27,5 +27,5 @@
 }
 
 .categoriesContainer {
-  @apply flex items-center justify-between py-4;
+  @apply flex items-center justify-between py-4 overflow-x-scroll gap-2;
 }

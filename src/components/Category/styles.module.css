@@ -1,5 +1,5 @@
 .container {
-    @apply w-40 py-2 px-4 rounded-lg border border-slate-100 flex flex-col items-center justify-center hover:bg-brand-red/5 hover:border-brand-red cursor-pointer;
+    @apply min-w-fit w-40 py-2 px-6 rounded-lg border border-slate-100 flex flex-col items-center justify-center hover:bg-brand-red/5 hover:border-brand-red cursor-pointer;
 }
 
 .emoji {
