@@ -8,6 +8,12 @@ module.exports = {
       colors: {
         'brand-red': '#EA1D2C',
       },
+      fontFamily: {
+        sans: ['Nunito'],
+      },
+      backgroundImage: {
+        'login-ilustration': "url('/assets/food.jpg')",
+      },
     },
   },
   plugins: [],

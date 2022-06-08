@@ -1,0 +1,55 @@
+.container {
+  @apply w-screen h-screen bg-white flex justify-between;
+}
+
+.content {
+  @apply w-full h-full flex flex-col items-start justify-between;
+}
+
+.contentContainer {
+  @apply h-full w-fit px-20 py-10 flex flex-col items-center justify-center;
+}
+
+.header {
+  @apply flex flex-col gap-2;
+}
+
+.header h1 {
+  @apply text-4xl font-bold text-slate-800;
+}
+
+.header span {
+  @apply text-base font-normal text-slate-800;
+}
+
+.loginForm {
+  @apply flex flex-col w-full gap-4;
+}
+
+.loginForm label {
+  @apply text-sm font-semibold text-slate-500 flex flex-col;
+}
+
+.loginForm label input {
+  @apply text-xs font-normal p-3 rounded-lg border-2 border-slate-200 focus:outline-brand-red flex flex-col;
+}
+
+.loginButton {
+  @apply w-full bg-[#EA1D2C] text-white font-bold p-3 rounded-md text-center hover:brightness-90 transition;
+}
+
+.forgotPassword {
+  @apply text-center text-sm font-bold text-brand-red;
+}
+
+.footer {
+  @apply flex gap-2 self-center text-slate-500 text-sm font-semibold;
+}
+
+.footer a {
+  @apply text-brand-red font-bold;
+}
+
+.ilustration {
+  @apply w-1/2 h-full bg-login-ilustration bg-cover bg-center;
+}
