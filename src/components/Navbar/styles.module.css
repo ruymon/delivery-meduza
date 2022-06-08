@@ -1,0 +1,15 @@
+.container {
+  @apply w-screen h-fit bg-white border border-slate-200 flex items-center justify-center;
+}
+
+.wrapper {
+  @apply max-w-5xl w-full p-2 flex justify-between;
+}
+
+.navItems {
+  @apply flex items-center text-sm font-bold text-slate-600 divide-x;
+}
+
+.navItems a {
+  @apply hover:text-slate-700 px-2;
+}
