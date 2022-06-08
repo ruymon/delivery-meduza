@@ -1,0 +1,23 @@
+.container {
+  @apply rounded-lg w-full h-fit flex flex-col sm:flex-row sm:items-start;
+}
+
+.content {
+  @apply flex flex-col justify-between pr-4 py-4;
+}
+
+.header {
+  @apply flex flex-col gap-2;
+}
+
+.header h1 {
+  @apply text-xl font-bold text-slate-800;
+}
+
+.header h2 {
+  @apply text-4xl font-extrabold;
+}
+
+.footer {
+  @apply text-sm text-slate-500;
+}
