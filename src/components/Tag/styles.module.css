@@ -1,0 +1,7 @@
+.container {
+    @apply w-fit px-2 p-1 bg-slate-200 rounded-full flex;
+}
+
+.container span {
+    @apply s
+}

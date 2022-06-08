@@ -1,6 +1,7 @@
 import { Category } from "../../components/Category";
 import { Navbar } from "../../components/Navbar";
 import { PromotionBanner } from "../../components/PromotionBanner";
+import { Tag } from "../../components/Tag";
 
 import styles from './styles.module.css';
 
@@ -25,7 +26,8 @@ export const Dashboard = () => {
         </div>
 
         <div className={styles.restaurantsContainer}>
-          
+          <h3>Restaurantes próximos</h3>
+          <Tag emoji="🍔" title="Burger" />
         </div>
 
       </div>
