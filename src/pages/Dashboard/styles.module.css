@@ -25,3 +25,7 @@
 .promotionsContainer section:last-child h2 {
   @apply text-brand-red;
 }
+
+.categoriesContainer {
+  @apply flex items-center justify-between py-4;
+}

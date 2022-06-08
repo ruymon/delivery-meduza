@@ -1,3 +1,4 @@
+import { Category } from "../../components/Category";
 import { Navbar } from "../../components/Navbar";
 import { PromotionBanner } from "../../components/PromotionBanner";
 
@@ -11,8 +12,20 @@ export const Dashboard = () => {
       <div className={styles.wrapper}>
         <div className={styles.promotionsContainer}>
           <PromotionBanner lead="Todas as sobremesas" header="20% OFF" image="https://res.cloudinary.com/ruyawm/image/upload/v1654652965/delivery%20medusa/img_mask_mxuxdg.png" footer="Noite Doce"/>
-
           <PromotionBanner lead="Hamburgers" header="50% OFF" image="https://res.cloudinary.com/ruyawm/image/upload/v1654652993/delivery%20medusa/img_mask_1_e6twtd.png" footer="Gostosuras"/>
+        </div>
+
+        <div className={styles.categoriesContainer}>
+          <Category emoji="🍔" title="Burger"/>
+          <Category emoji="🍣" title="Sushi"/>
+          <Category emoji="🥩" title="Churras"/>
+          <Category emoji="🥦" title="Vegetariano"/>
+          <Category emoji="🧁" title="Sobremesas"/>
+          <Category emoji="🍕" title="Pizza"/>
+        </div>
+
+        <div className={styles.restaurantsContainer}>
+
         </div>
 
       </div>

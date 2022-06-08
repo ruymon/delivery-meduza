@@ -1,0 +1,11 @@
+.container {
+    @apply w-40 py-2 px-4 rounded-lg border border-slate-100 flex flex-col items-center justify-center hover:bg-brand-red/5 hover:border-brand-red cursor-pointer;
+}
+
+.emoji {
+    @apply text-lg;
+}
+
+.title {
+    @apply text-sm font-bold text-gray-600;
+}
