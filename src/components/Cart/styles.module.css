@@ -1,0 +1,7 @@
+.container {
+  @apply w-8 h-8 relative inline-block rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center;
+}
+
+.amount {
+  @apply absolute top-0 right-0 bg-brand-red text-white -mt-2 -mr-1 px-1 text-xs rounded-full text-center;
+}
