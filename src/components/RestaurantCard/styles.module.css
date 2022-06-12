@@ -1,3 +1,27 @@
 .container {
-    @apply
+  @apply w-full lg:max-w-xs bg-white border-2 border-gray-100 rounded-lg;
+}
+
+.imageContainer {
+  @apply w-full h-40;
+}
+
+.imageContainer img {
+  @apply w-full h-full object-cover rounded-t-lg;
+}
+
+.content {
+  @apply w-full h-full p-4 flex flex-col gap-3;
+}
+
+.content h3 {
+  @apply font-bold text-lg text-slate-800
+}
+
+.info {
+  @apply flex items-center text-center gap-2 text-slate-500 font-semibold;
+}
+
+.separator {
+  @apply w-1 h-1 bg-brand-red rounded-full;
 }

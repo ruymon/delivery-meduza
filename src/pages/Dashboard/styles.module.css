@@ -29,3 +29,11 @@
 .categoriesContainer {
   @apply flex items-center justify-between py-4 overflow-x-scroll gap-2;
 }
+
+.restaurantsHeader {
+  @apply text-xl font-semibold text-slate-800 my-4;
+}
+
+.restaurantsContainer {
+  @apply flex items-center gap-6 flex-wrap;
+}
