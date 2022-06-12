@@ -2,23 +2,48 @@ import styles from './styles.module.css';
 import { Tag } from '../Tag';
 import { FiClock } from 'react-icons/fi';
 
-export function RestaurantCard() {
+import { categories } from './../../helpers/categories';
+
+interface RestaurantData {
+    id: number;
+    trending: boolean;
+    bannerImage: string;
+    name: string;
+    deliveryTime: string;
+    budget: number;
+    tags: number[];
+};
+
+interface RestaurantCardProps {
+    data: RestaurantData;
+};
+
+export function RestaurantCard({ data }: RestaurantCardProps) {
     return (
         <div className={styles.container}>
             <div className={styles.imageContainer}>
-                <img src="https://images.unsplash.com/photo-1594397108691-61fe6098c247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Restaurant banner" />
+                <img src={data.bannerImage} />
             </div>
 
             <div className={styles.content}>
-                <h3>Black Sushi</h3>
+                <h3>{data.name}</h3>
                 <div className={styles.info}>
                     <FiClock />
-                    <span>30-40 min</span>
+                    <span>{data.deliveryTime} min</span>
                     <div className={styles.separator} />
-                    <span>$$$</span>
+                    <span>{Array.apply(null, Array(data.budget)).map(() => '$')}</span>
                 </div>
 
-                <Tag emoji="🍔" title="Burger" />
+                { data.tags.map(tag => {
+                    const tagCategory = categories.find(category => category.id === tag);
+                    
+                    const tagEmoji = tagCategory?.emoji || '👀';
+                    const tagTitle = tagCategory?.title || 'Desconhecido';
+
+                    return (
+                        <Tag key={tag} emoji={tagEmoji} title={tagTitle}/>
+                    )
+                }) }
             </div>
         </div>
     );

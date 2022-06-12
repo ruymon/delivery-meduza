@@ -3,6 +3,9 @@ import { Navbar } from "../../components/Navbar";
 import { PromotionBanner } from "../../components/PromotionBanner";
 import { RestaurantCard } from "../../components/RestaurantCard";
 
+import { categories } from './../../helpers/categories';
+import { restaurants } from './../../helpers/restaurants';
+
 import styles from './styles.module.css';
 
 export const Dashboard = () => {
@@ -17,22 +20,13 @@ export const Dashboard = () => {
         </div>
 
         <div className={styles.categoriesContainer}>
-          <Category emoji="🍔" title="Burger"/>
-          <Category emoji="🍣" title="Sushi"/>
-          <Category emoji="🥩" title="Churras"/>
-          <Category emoji="🥦" title="Vegetariano"/>
-          <Category emoji="🧁" title="Sobremesas"/>
-          <Category emoji="🍕" title="Pizza"/>
+          { categories.map(category => <Category key={category.id} emoji={category.emoji} title={category.title} />) }
         </div>
 
         <h3 className={styles.restaurantsHeader}>Restaurantes próximos</h3>
 
         <div className={styles.restaurantsContainer}>
-          <RestaurantCard  />
-          <RestaurantCard  />
-          <RestaurantCard  />
-          <RestaurantCard  />
-          <RestaurantCard  />
+          { restaurants.map(restaurant => <RestaurantCard key={restaurant.id} data={restaurant} />) }
         </div>
 
       </div>
