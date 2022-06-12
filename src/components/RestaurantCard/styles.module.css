@@ -25,3 +25,7 @@
 .separator {
   @apply w-1 h-1 bg-brand-red rounded-full;
 }
+
+.tagContainer {
+  @apply flex gap-2 truncate;
+}

@@ -35,16 +35,19 @@ export function RestaurantCard({ data }: RestaurantCardProps) {
                     <span>{Array.apply(null, Array(data.budget)).map(() => '$')}</span>
                 </div>
 
-                { data.tags.map(tag => {
-                    const tagCategory = categories.find(category => category.id === tag);
-                    
-                    const tagEmoji = tagCategory?.emoji || '👀';
-                    const tagTitle = tagCategory?.title || 'Desconhecido';
+                <div className={styles.tagContainer}>
+                    { data.tags.map(tag => {
+                        const tagCategory = categories.find(category => category.id === tag);
+                        
+                        const tagEmoji = tagCategory?.emoji || '👀';
+                        const tagTitle = tagCategory?.title || 'Desconhecido';
 
-                    return (
-                        <Tag key={tag} emoji={tagEmoji} title={tagTitle}/>
-                    )
-                }) }
+                        return (
+                            <Tag key={tag} emoji={tagEmoji} title={tagTitle}/>
+                        )
+                    }) }
+                </div>
+
             </div>
         </Link>
     );
