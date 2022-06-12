@@ -1,0 +1,7 @@
+.container {
+  @apply w-screen h-full flex flex-col items-center;
+}
+
+.wrapper {
+  @apply max-w-5xl p-2 w-full h-full flex flex-col mt-8;
+}

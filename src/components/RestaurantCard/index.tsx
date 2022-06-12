@@ -21,7 +21,7 @@ interface RestaurantCardProps {
 
 export function RestaurantCard({ data }: RestaurantCardProps) {
     return (
-        <Link className={styles.container} to='/'>
+        <Link className={styles.container} to='/app/checkout'>
             <div className={styles.imageContainer}>
                 <img src={data.bannerImage} />
             </div>
