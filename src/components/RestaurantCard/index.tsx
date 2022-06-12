@@ -3,6 +3,7 @@ import { Tag } from '../Tag';
 import { FiClock } from 'react-icons/fi';
 
 import { categories } from './../../helpers/categories';
+import { Link } from 'react-router-dom';
 
 interface RestaurantData {
     id: number;
@@ -20,7 +21,7 @@ interface RestaurantCardProps {
 
 export function RestaurantCard({ data }: RestaurantCardProps) {
     return (
-        <div className={styles.container}>
+        <Link className={styles.container} to='/'>
             <div className={styles.imageContainer}>
                 <img src={data.bannerImage} />
             </div>
@@ -45,6 +46,6 @@ export function RestaurantCard({ data }: RestaurantCardProps) {
                     )
                 }) }
             </div>
-        </div>
+        </Link>
     );
 }
