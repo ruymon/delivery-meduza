@@ -3,13 +3,13 @@ import { DashboardLayout } from './Layouts/DashboardLayout';
 import { Checkout } from './pages/Checkout';
 import { Dashboard } from './pages/Dashboard';
 
-import { Login } from './pages/Login';
+import { Splash } from './pages/Splash';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Splash />} />
 
         <Route path="/app" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />

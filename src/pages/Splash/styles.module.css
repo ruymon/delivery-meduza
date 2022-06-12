@@ -1,0 +1,47 @@
+.container {
+  @apply w-screen h-screen bg-white flex justify-between;
+}
+
+.contentContainer {
+  @apply h-full w-full sm:px-20 px-8 py-10 flex flex-col items-center justify-center;
+}
+
+.content {
+  @apply w-full h-full flex flex-col items-start justify-between;
+}
+
+.content img {
+  @apply w-32;
+}
+
+.header {
+  @apply flex flex-col gap-6;
+}
+
+.header h1 {
+  @apply text-5xl font-bold text-slate-800 md:w-3/4 leading-snug;
+}
+
+.header span {
+  @apply text-lg font-semibold leading-relaxed text-slate-500 md:w-3/4;
+}
+
+.button {
+  @apply flex p-4 font-bold gap-4 items-center justify-center bg-brand-red hover:brightness-90 transition text-white rounded-lg text-lg;
+}
+
+.button div {
+  @apply rotate-90 flex items-center justify-center;
+}
+
+.button div svg {
+  @apply animate-bounce;
+}
+
+.footer {
+  @apply flex flex-col sm:flex-row items-center sm:items-start gap-1 sm:gap-2 self-center text-slate-500 text-sm font-semibold text-center;
+}
+
+.ilustration {
+  @apply md:w-full h-full bg-login-ilustration bg-cover bg-center;
+}
