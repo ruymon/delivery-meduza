@@ -35,4 +35,31 @@ export const restaurants = [
         budget: 3,
         tags: [3]
     },
+    {
+        id: 4,
+        trending: true,
+        bannerImage: "http://juliafleck.com.br/wp-content/uploads/2017/05/Outback_-The-Outbacker-Burger.jpg",
+        name: "Outback",
+        deliveryTime: "45-60",
+        budget: 3,
+        tags: [3]
+    },
+    {
+        id: 5,
+        trending: true,
+        bannerImage: "https://brcomotradicionalissimowww.b-cdn.net/wp-content/uploads/2021/10/otradicionalissimo_unidade_santa-cruz_01-400x400.jpg",
+        name: "O Tradicionalíssimo Santa Cruz",
+        deliveryTime: "20-30",
+        budget: 2,
+        tags: [5]
+    },
+    {
+        id: 6,
+        trending: true,
+        bannerImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfmZenRkMpGlRx0Oks4pVB78A8kixEGe4ZTh85dHm65rAkZnLJQPgUUKP9nsXk0U0k3E&usqp=CAU",
+        name: "NARAN - Cozinha Autêntica",
+        deliveryTime: "20-30",
+        budget: 2,
+        tags: [4]
+    },
 ];
