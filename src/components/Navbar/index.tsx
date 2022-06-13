@@ -12,7 +12,7 @@ export function Navbar () {
         <div className={styles.navItems}>
           <div className={styles.divider}/>
           <Cart amount={4} />
-          <Avatar url="https://avatars.githubusercontent.com/u/50504050?v=4" />
+          <Avatar url="https://www.publicspace.org/documents/220568/1825027/36-Judith+Butler-3.jpg/56313282-c6cb-0864-b426-644ae847659e?t=1529000341298" />
         </div>
       </div>
     </nav>

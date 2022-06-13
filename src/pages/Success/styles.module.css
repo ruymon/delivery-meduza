@@ -1,0 +1,23 @@
+.container {
+  @apply w-screen h-screen flex items-center justify-center;
+}
+
+.content {
+  @apply flex flex-col items-center justify-center gap-4 text-center p-4;
+}
+
+.icon {
+  @apply w-24 h-24 bg-green-50 rounded-full my-8 flex items-center justify-center animate-bounce;
+}
+
+.icon svg {
+  @apply w-12 h-12 text-green-500;
+}
+
+.content h1 {
+  @apply text-3xl font-bold text-slate-700;
+}
+
+.content p {
+  @apply text-slate-600 sm:w-3/4 text-center;
+}

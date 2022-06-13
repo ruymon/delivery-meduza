@@ -19,7 +19,7 @@ export function Checkout() {
   const navigate = useNavigate();
 
   async function onSubmit(data: FormData) {
-    await api.post("ticket/new", data);
+    await api.post("/api/order/create", data);
 
     // redirect to success page
     navigate("/");

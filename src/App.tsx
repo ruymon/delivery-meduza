@@ -4,6 +4,7 @@ import { Checkout } from './pages/Checkout';
 import { Dashboard } from './pages/Dashboard';
 
 import { Splash } from './pages/Splash';
+import { Success } from './pages/Success';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="checkout" element={<Checkout />} />
         </Route>
+
+        <Route path="/app/checkout/success" element={<Success />} />
 
       </Routes>
     </BrowserRouter>
