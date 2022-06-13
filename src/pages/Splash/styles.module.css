@@ -27,7 +27,7 @@
 }
 
 .button {
-  @apply flex p-4 font-bold gap-4 items-center justify-center bg-brand-red hover:brightness-90 transition text-white rounded-lg text-lg;
+  @apply flex p-4 w-full sm:w-fit font-bold gap-4 items-center justify-center bg-brand-red hover:brightness-90 transition text-white rounded-lg text-lg;
 }
 
 .button div {
