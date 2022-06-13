@@ -22,7 +22,7 @@ export function Checkout() {
     await api.post("/api/order/create", data);
 
     // redirect to success page
-    navigate("/");
+    navigate("/app/checkout/success");
 
     console.log(data);
   };
